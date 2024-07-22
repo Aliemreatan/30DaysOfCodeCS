@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+class Solution {
+    static void Main(String[] args) {
+        int i = 4;
+        double d = 4.0;
+        string s = "HackerRank ";
+
+        
+        // Declare second integer, double, and String variables.
+int a=Convert.ToInt32(Console.ReadLine());
+double x = Convert.ToDouble(Console.ReadLine());
+string l = Console.ReadLine();
+
+Console.WriteLine(a+i);
+Console.WriteLine((d+x).ToString("#.0"));
+Console.WriteLine(s+l);
+Console.ReadLine();
+        
+        // Print the sum of the double variables on a new line.
+        
+        // Concatenate and print the String variables on a new line
+        // The 's' variable above should be printed first.
+
+    }
+}
