@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+class Solution {
+    static void Main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
+    int T = Convert.ToInt32(Console.ReadLine());
+        List<string> strings = new List<string>();
+        
+        for (int i = 0; i < T; i++)
+        {
+            string line =  Console.ReadLine();
+            strings.Add(line);
+        }
+        
+        for (int i = 0; i < T; i++)
+        {
+            string line = strings[i];
+            string even = "";
+            string odd = "";
+            for (int j = 0; j < line.Length; j++)
+            {
+                if (j == 0 || j%2 == 0)
+                    even += line[j];
+                else
+                    odd += line[j];
+            }
+            
+            Console.WriteLine(even + " " + odd);
+        }
+    }
+}
